@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gledson Desingn's</title>
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="logo">
+        <h3>Início</h3>
+        <h3>Sobre Nós</h3>
+        <h3>Serviços</h3>
+        <button>Melhore seu desing agora!</button>
+    </header>
+
+    <main>
+
+        <section class="container1">
+            <div class="texto-container1">
+                <h1>Design para infoprodutores</h1>
+                <h3>A sua copy não é o suficiente no mundo digital atual, você precisa ir além, agradar não só a mente do seu público, mas também prendê-los com um design único</h3>
+                <button>Melhore seu desing agora!</button>
+            </div>
+            <div class="img-container">
+                <img src="img/logo.png" alt="logo" class="logo1">
+            </div>
+        </section>
+
+        <section class="container2">
+            <div class="img-container">
+                <img src="img/1.png" alt="logo">
+            </div>
+            <div class="texto-container2">
+                <h5>O primeiro passo para transformar seu perfil!</h5>
+                <h1>O BRIEFING:</h1>
+                <p>Depois de 10 anos atuando como designer grafico, eu criei um documento que junta tudo que é preciso para criar um identidade unica e perfeita para o seu perfil.</p>
+            </div>
+        </section>
+
+        <section class="container1">
+            <div class="texto-container1-1">
+                <h5>O segundo passo para começar a atrair mais clientes!</h5>
+                <h1>O POSICIONAMENTO <br>PELA ARTE:</h1>
+                <p>Seu design não pode ser aquela coisa óbvia que você vê por ai. Os seus clientes estão cansados de ver mais do mesmo, eles querem ver aquilo que reflete a sua mensagem! Então, se você tem certeza do propósito do seu produto, merece ter uma arte que reflita tudo isso.</p>
+            </div>
+            <div class="img-container">
+                <img src="img/2.png" alt="logo">
+            </div>
+        </section>
+
+        <section class="container2">
+            <div class="img-container">
+                <img src="img/3.png" alt="logo">
+            </div>
+            <div class="texto-container2">
+                <h5>O terceiro passo para se tornar único no seu mercado!</h5>
+                <h1>FAÇA A BOA ARTE:</h1>
+                <p>Nesse momento é quando eu e você vamos juntar nossas mentes e começar a desenvolver algo único, algo que seu nicho nunca viu, e só verá após essa etapa. Você terá um design que vai refletir sua mensagem como ela deve ser refletida, e seu público vai te ver da forma que você merece ser visto!</p>
+            </div>
+        </section>
+
+        <div class="titulo">
+            <h2>PRODUTOS</h2>
+        </div>
+
+        <section class="produtos">
+            <div class="produto-card">
+                <img src="img/mobile.png" alt="">
+            <div class="produto-texto">
+                    <h2>Estático</h2>
+                    <h4>Post com imagem única e elaboração especifica para sua finalidade</h4>
+                    <h6>A unidade: R$80,00</h6>
+                    <h3 id="price1">R$00,00</h3>
+                    <label for="volume">Quantidade:</label>
+                    <h4 id="volumeValue1">0</h3>
+                    <input type="range" id="volume1" name="volume2" min="0" max="30" value="0" oninput="updateValue(this.value, 'price1', 'volumeValue1', 80)">
+                </div>
+            </div>
+
+            <div class="produto-card">
+                    <img src="img/mobile.png" alt="">
+                <div class="produto-texto">
+                    <h2>Carrossel</h2>
+                    <h4>Post feito para manter o engajamento enquanto aproxima seu público</h4>
+                    <h6>A unidade: R$120,00</h6>
+                    <h3 id="price2">R$00,00</h3>
+                    <label for="volume">Quantidade:</label>
+                    <h4 id="volumeValue2">0</h3>
+                    <input type="range" id="volume2" name="volume2" min="0" max="30" value="0" oninput="updateValue(this.value, 'price2', 'volumeValue2', 120)">
+                </div>
+            </div>
+
+            <div class="produto-card">
+                    <img src="img/mobile.png" alt="">
+                <div class="produto-texto">
+                    <h2>Motion Design</h2>
+                    <h4>A melhor e mais dinâmica forma de surpreender seu público e clientes</h4>
+                    <h6>A unidade: R$150,00</h6>
+                    <h3 id="price3">R$00,00</h3>
+                    <label for="volume">Quantidade:</label>
+                    <h4 id="volumeValue3">0</h3>
+                    <input type="range" id="volume3" name="volume2" min="0" max="30" value="0" oninput="updateValue(this.value, 'price3', 'volumeValue3', 150)">
+                </div>
+            </div>
+        </section>
+
+        <div class="titulo">
+            <h2>PLANOS MENSAIS</h2>
+        </div>
+
+        <section class="plano-mensal">
+                <div class="plano-texto">
+                    <h2>Trimestral</h2>
+                    <h4>Post com imagem única e elaboração especifica para sua finalidade</h4>
+                    <h6>Valor mensal:</h6>
+                    <h3 id="precotrimestral">R$00,00</h3>
+                    <h6>Valor Total com Desconto:</h6>
+                    <h3 id="totaltrimestral">R$00,00</h3>
+                    <!-- <h5>Valor Total com Desconto:</h5> -->
+                    <!-- <h3 id="totaltrimestraldesconto">R$00,00</h3> -->
+                </div>
+
+                <div class="plano-texto">
+                    <h2>Mensal</h2>
+                    <h4>Post com imagem única e elaboração especifica para sua finalidade</h4>
+                    <h6>Valor mensal:</h6>
+                    <h3 id="precomensal">R$00,00</h3>
+                    <h6>Valor Total:</h6>
+                    <h3 id="totalmensal">R$00,00</h3>
+                </div>
+
+                <div class="plano-texto">
+                    <h2>Semestral</h2>
+                    <h4>Post com imagem única e elaboração especifica para sua finalidade</h4>
+                    <h6>Valor mensal:</h6>
+                    <h3 id="precosemestral">R$00,00</h3>
+                    <h6>Valor Total com Desconto:</h6>
+                    <h3 id="totalsemestral">R$00,00</h3>
+                    <!-- <h5>Valor Total com Desconto:</h5> -->
+                    <!-- <h3 id="totalsemestraldesconto">R$00,00</h3> -->
+                </div>
+        </section>
+
+        <div class="titulo">
+            <h2>CLIENTES</h2>
+        </div>
+
+        <section class="clientes">
+            <div class="clientes-texto">
+                        <img src="img/clientes/g1.jpg">
+                    <div class="cliente-comentario">
+                        <h2>Gato cheio de safadeza</h2>
+                        <h4>O design do cara é profissional, sempre organizado e sem safadeza, pode compra que é bom</h4>
+                    </div>
+                <div class="estrelas">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                </div>
+            </div>
+
+            <div class="clientes-texto">
+                        <img src="img/clientes/g2.jpeg">
+                    <div class="cliente-comentario">
+                        <h2>Gato que veio da guerra</h2>
+                        <h4>O design do cara do photoshop é bombástico. Como eu sei disso? EU VIM DA GUEERRA</h4>
+                    </div>
+                <div class="estrelas">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                    <img src="img/star.png" alt="">
+                </div>
+            </div>
+
+            <div class="clientes-texto">
+                    <img src="img/clientes/g3.jpg">
+                <div class="cliente-comentario">
+                    <h2>Gapão. O gato no pão</h2>
+                    <h4>O design dele é tipo nutella, fica bom em qualquer coisa, até no pão</h4>
+                </div>
+            <div class="estrelas">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+            </div>
+        </div>
+
+        <div class="clientes-texto">
+                    <img src="img/clientes/g4.png">
+                <div class="cliente-comentario">
+                    <h2>GATO. O GATO</h2>
+                    <h4>Sim, sou eu mesmo, o gato, o gato, e eu quero dizer... ops, miau</h4>
+                </div>
+            <div class="estrelas">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+                <img src="img/star.png" alt="">
+            </div>
+        </div>
+        </section>
+
+        <section class="infos">
+            <div class="texto1">
+                <h4>Produtos</h4>
+                <h5>Estátio</h5>
+                <h5>Carrossel</h5>
+                <h5>Motion Design</h5>
+            </div>
+
+            <div class="texto1">
+                <h4>Produtos</h4>
+                <h5>Estátio</h5>
+                <h5>Carrossel</h5>
+                <h5>Motion Design</h5>
+            </div>
+
+            <div class="texto2">
+                <h4>Produtos</h4>
+                <h5>Estátio</h5>
+                <h5>Carrossel</h5>
+                <h5>Motion Design</h5>
+            </div>
+
+            <div class="texto2">
+                <h4>Produtos</h4>
+                <h5>Estátio</h5>
+                <h5>Carrossel</h5>
+                <h5>Motion Design</h5>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="itens-footer">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+            </div>
+            <div class="redes-sociais">
+                <img src="img/png-clipart-instagram-logo-icon-others-text-photography-thumbnail.png" alt="">
+                <img src="img/vecteezy_youtube-logo-png-youtube-logo-transparent-png-youtube-icon_23986480.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
